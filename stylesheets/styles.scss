@@ -88,7 +88,7 @@ a {
 	}
 	@media (min-width: $screenXL){
 		margin-top: 5rem;
-		max-width: 30rem;
+		max-width: 35rem;
 	}
 }
 
@@ -97,7 +97,7 @@ a {
 	width: 232px; //exact dimensions probably needed for video!
 	margin: 0 auto;
 	@media (min-width: $screenS){
-		width: 298px; //this is too big for macbook sized screen so I made screenL smaller
+		width: 298px;
 		float: left;
 		margin-left: 3rem;
 	}
@@ -142,23 +142,34 @@ a {
 	}
 }
 
-.appStoreImage {
+.appStoreImageSmallScreen {
 	width: 9.25rem;
-	margin: 1.5rem auto;
+	margin: 2rem auto 1rem;
 	@media (min-width: $screenS){
-		width:17rem;
-		margin-top:3rem;
-	}
-	@media (min-width: $screenM){
-		margin-top: 2rem;
+		display:none;
 	}
 	img{
 		width:100%;
 	}
 }
 
+.appStoreImageBiggerScreen {
+	display: none;
+	@media (min-width: $screenS){
+		display: block;
+		margin: 2rem auto;
+		width: 10rem;
+	}
+	@media (min-width: $screenM){
+		width: 13rem;
+	}
+	img{
+		width: 100%;
+	}
+}
+
 footer {
-	margin: 4rem 0 2rem;
+	margin: 2rem 0;
 	p{
 		font-size: 0.8rem;
 		margin: 0;
