@@ -13,12 +13,11 @@ $linkBlue: #4A90E2;
 //FONTS
 $fontstack: "Avenir Next", Avenir, "museo-sans", Arial, sans-serif;
 
-$screenS: 768px; //ipad1, 2, and iPad mini portrait (768x1024)
-$screenM: 1024px; //landscape tablet and up (1024x768)
-$screenL: 1200px; //Nexus 10 landscape, smaller desktops, etc.
-$screenXL: 1824px; //bigger is better
+$screenS: 768px;
+$screenM: 1024px;
+$screenL: 1200px;
+$screenXL: 1824px;
 
-//NOTE: currently don't have sizing for landscape small tablet - do we want to add it? (600x800)
 
 body {
 	font-family: $fontstack;
@@ -94,7 +93,7 @@ a {
 
 .phoneContainer {
 	position:relative;
-	width: 232px; //exact dimensions probably needed for video!
+	width: 232px;
 	margin: 0 auto;
 	@media (min-width: $screenS){
 		width: 298px;
@@ -105,7 +104,7 @@ a {
 		margin-left: 10rem;
 	}
 	@media (min-width: $screenL){
-		width: 232px; //yes no? too small?
+		width: 232px;
 	}
 	@media (min-width: $screenXL){
 		width: 328px;
@@ -197,7 +196,7 @@ footer {
 		float: none;
 		margin: 4rem 0 2rem;
 	}
-	@media (min-width: $screenL){
+	@media (min-width: $screenXL){
 		margin-top: 8rem;
 	}
 }
