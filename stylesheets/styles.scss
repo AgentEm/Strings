@@ -15,18 +15,17 @@ $fontstack: "Avenir Next", Avenir, Arial, sans-serif;
 
 $screenS: 768px; //ipad1, 2, and iPad mini portrait (768x1024)
 $screenM: 1024px; //landscape tablet and up (1024x768)
-//inbetween 1024 and 1200 looks bad - why?
 $screenL: 1200px; //Nexus 10 landscape, smaller desktops, etc.
-$screenXL: 1824px;
+$screenXL: 1824px; //bigger is better
 
 //NOTE: currently don't have sizing for landscape small tablet - do we want to add it? (600x800)
 
 body {
-	font-family:$fontstack;
+	font-family: $fontstack;
 	line-height: 1.5;
 	text-align:center;
 	color: $textGrey;
-	background-color:#fff;
+	background-color: #fff;
 }
 
 h1 {
@@ -52,8 +51,8 @@ a {
 }
 
 .appStoreContainer {
-	width:100%;
-	height:5rem; //remove when real thing's put in
+	width: 100%;
+	height: 5rem; //remove when real thing's put in
 	background-color:#CCC;
 	@media (min-width: $screenS){
 		display:none;
@@ -78,7 +77,8 @@ a {
 
 .mainContent {
 	p {
-		font-size: 0.625rem;
+		font-size: 1rem;
+		padding: 0 1rem;
 	}
 	@media (min-width: $screenS){
 		float:right;
